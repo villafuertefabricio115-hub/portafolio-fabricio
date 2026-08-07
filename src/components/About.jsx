@@ -1,7 +1,7 @@
 export default function About() {
   const points = [
-    "Desarrollo soluciones web con enfoque en claridad, usabilidad y experiencia del usuario.",
-    "Trabajo con React y Tailwind CSS para convertir ideas en productos funcionales y con identidad visual sólida.",
+    "Me interesa más el desarrollo backend, la lógica de negocio y la construcción de sistemas que funcionen de forma robusta y escalable.",
+    "También disfruto trabajar en experiencias de usuario cuando estas están conectadas con una arquitectura sólida y bien pensada.",
     "Estoy interesado en proyectos donde la tecnología pueda aportar valor real a personas, instituciones o procesos.",
   ];
 
@@ -40,11 +40,11 @@ export default function About() {
               </p>
 
               <h3 className="text-2xl font-semibold text-white sm:text-3xl">
-                Soy un desarrollador en formación enfocado en crear soluciones web con propósito y sentido técnico.
+                Soy un desarrollador en formación con interés particular en backend, bases de datos y el desarrollo de sistemas con propósito real.
               </h3>
 
               <p className="text-base leading-8 text-gray-400">
-                Me interesa construir productos que sean funcionales, claros y útiles, especialmente cuando resuelven problemas reales. Mi camino ha estado vinculado al desarrollo de software con enfoque en frontend, aunque también he explorado áreas como el análisis de datos, la lógica de negocio y el desarrollo de sistemas orientados a la acción.
+                Me interesa construir productos que sean funcionales, claros y útiles, especialmente cuando resuelven problemas reales. Mi camino ha estado vinculado al desarrollo de software con enfoque en la lógica del sistema, el manejo de datos y la creación de soluciones que puedan sostenerse en el tiempo. También he explorado áreas como análisis de datos, diseño de procesos y desarrollo de aplicaciones orientadas a la acción.
               </p>
             </div>
 

@@ -1,8 +1,28 @@
-import { SiPython, SiReact, SiFlask, SiTailwindcss, SiScikitlearn } from "react-icons/si";
+import { SiPython, SiReact, SiFlask, SiTailwindcss, SiScikitlearn, SiMysql } from "react-icons/si";
 import { FaArrowRight } from "react-icons/fa6";
-
+import { FaJava } from "react-icons/fa6";
 export default function Projects() {
   const projectsList = [
+    {
+      title: "CITAMED",
+      subtitle: "Sistema de gestión de citas médicas",
+      status: "EN_DESARROLLO",
+      statusColor: "border-amber-500/50 text-[#fbbf24] bg-amber-500/10",
+      description:
+        "Plataforma pensada para apoyar la gestión de citas médicas con enfoque institucional, organización de información y mejora en el seguimiento de procesos.",
+      details: [
+        "Diseño de la base de datos para estructurar la información del sistema.",
+        "Desarrollo de la interfaz en JavaFX para una experiencia funcional y ordenada.",
+        "Implementación de la lógica del sistema para gestionar operaciones clave.",
+        "Enfoque en soluciones prácticas para entornos académicos y de apoyo institucional.",
+      ],
+      technologies: [
+        { name: "JavaFX", icon: <span className="text-sm">FX</span> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+        { name: "Java", icon: <FaJava className="text-red-500" /> },
+      ],
+      demoAvailable: false,
+    },
     {
       title: "PREVIA",
       subtitle: "Prevención de riesgo académico con apoyo de Machine Learning",
@@ -14,6 +34,7 @@ export default function Projects() {
         "Diseño de un sistema de scoring para evaluar riesgo en base a formularios periódicos.",
         "Análisis de respuestas libres para complementar la evaluación cuantitativa.",
         "Propuesta de alertas y planes de intervención para estudiantes y autoridades.",
+        "Integración de bases de datos para almacenar información relevante del proceso.",
       ],
       technologies: [
         { name: "Python", icon: <SiPython className="text-blue-400" /> },
@@ -21,6 +42,7 @@ export default function Projects() {
         { name: "Flask", icon: <SiFlask className="text-gray-300" /> },
         { name: "React", icon: <SiReact className="text-cyan-400" /> },
         { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
       ],
       demoAvailable: false,
     },

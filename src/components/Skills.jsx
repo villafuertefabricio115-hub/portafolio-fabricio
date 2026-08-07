@@ -2,15 +2,17 @@ import {
   SiJavascript,
   SiPython,
   SiReact,
+  SiTailwindcss,
   SiFlask,
   SiSpringboot,
   SiMysql,
   SiSqlite,
+  SiScikitlearn,
   SiGit,
   SiGithub,
   SiPostman,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa6";
+import { FaJava, FaFileExcel, FaFileWord, FaFilePowerpoint } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 
 export default function Skills() {
@@ -21,41 +23,47 @@ export default function Skills() {
       skills: [
         { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
         { name: "React", icon: <SiReact className="text-cyan-400" /> },
-        { name: "Tailwind CSS", icon: <SiReact className="text-sky-400" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
       ],
     },
     {
-      title: "Backend & Data",
-      description: "Lógica de negocio, APIs y estructuras de datos simples y eficientes.",
+      title: "Backend & Software",
+      description: "Lógica de negocio, arquitecturas de software y gestión de bases de datos.",
       skills: [
         { name: "Python", icon: <SiPython className="text-blue-400" /> },
         { name: "Flask", icon: <SiFlask className="text-gray-300" /> },
-        { name: "SQL", icon: <SiMysql className="text-blue-500" /> },
+        { name: "Java", icon: <FaJava className="text-red-500" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+        { name: "SQLite", icon: <SiSqlite className="text-sky-400" /> },
       ],
     },
     {
-      title: "Herramientas",
-      description: "Flujo de trabajo profesional con control de versiones y testing básico.",
+      title: "Data & Machine Learning",
+      description: "Modelado predictivo, procesamiento de datos e indicadores académicos.",
+      skills: [
+        { name: "Machine Learning", icon: <SiScikitlearn className="text-orange-400" /> },
+        { name: "Scikit-Learn", icon: <SiScikitlearn className="text-orange-500" /> },
+        { name: "Python Data", icon: <SiPython className="text-yellow-400" /> },
+      ],
+    },
+    {
+      title: "Herramientas & Ofimática",
+      description: "Control de versiones, pruebas, documentación técnica y análisis de datos.",
       skills: [
         { name: "Git", icon: <SiGit className="text-orange-500" /> },
         { name: "GitHub", icon: <SiGithub className="text-white" /> },
         { name: "VS Code", icon: <VscVscode className="text-blue-400" /> },
         { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
-      ],
-    },
-    {
-      title: "Aprendizaje",
-      description: "Capacidad para adaptarme rápido y seguir creciendo con nuevas tecnologías.",
-      skills: [
-        { name: "Java", icon: <FaJava className="text-red-500" /> },
-        { name: "Spring Boot", icon: <SiSpringboot className="text-green-500" /> },
-        { name: "SQLite", icon: <SiSqlite className="text-sky-400" /> },
+        { name: "Excel", icon: <FaFileExcel className="text-[#1D6F42]" /> },
+        { name: "Word", icon: <FaFileWord className="text-[#1B5AB6]" /> },
+        { name: "PowerPoint", icon: <FaFilePowerpoint className="text-[#D04423]" /> },
       ],
     },
   ];
 
   const softSkills = [
     "Resolución de problemas",
+    "Análisis de requerimientos",
     "Comunicación clara",
     "Trabajo en equipo",
     "Atención al detalle",
@@ -64,11 +72,18 @@ export default function Skills() {
   return (
     <section id="habilidades" className="relative px-6 py-20">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.08]" style={{ backgroundImage: "linear-gradient(to right, #2a2a2a 1px, transparent 1px), linear-gradient(to bottom, #2a2a2a 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #2a2a2a 1px, transparent 1px), linear-gradient(to bottom, #2a2a2a 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
         <div className="absolute right-0 top-10 h-[280px] w-[280px] rounded-full bg-[#fbbf24]/10 blur-[120px]" />
       </div>
 
-      <div className="mx-auto max-w-5xl relative z-10">
+      <div className="relative z-10 mx-auto max-w-5xl">
         <div className="mb-10 flex items-center gap-3 font-mono">
           <span className="text-xl font-bold text-[#fbbf24]">02.</span>
           <h2 className="text-2xl font-extrabold tracking-tight text-[#e4e4e4] md:text-3xl">
@@ -79,7 +94,7 @@ export default function Skills() {
 
         <div className="mb-8 max-w-2xl">
           <p className="text-base leading-8 text-gray-400">
-            Trabajo con un stack orientado a la construcción de productos web funcionales, claros y con buena experiencia de usuario.
+            Trabajo con un stack enfocado en desarrollo de software, análisis de datos y creación de productos web funcionales e intuitivos.
           </p>
         </div>
 
@@ -119,9 +134,12 @@ export default function Skills() {
           <h3 className="mb-4 font-mono text-sm font-semibold uppercase tracking-[0.24em] text-[#fbbf24]">
             Competencias profesionales
           </h3>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
             {softSkills.map((skill) => (
-              <div key={skill} className="rounded-lg border border-[#2a2a2a] bg-[#0a0a0a] px-4 py-3 text-sm text-gray-300">
+              <div
+                key={skill}
+                className="rounded-lg border border-[#2a2a2a] bg-[#0a0a0a] px-4 py-3 text-sm text-gray-300"
+              >
                 {skill}
               </div>
             ))}
