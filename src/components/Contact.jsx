@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaPaperPlane } from "react-icons/fa6";
 
-const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "";
+// Clave directa de Web3Forms para producción
+const ACCESS_KEY = "a2f6c570-b0d5-4b85-bae0-50e601a0c2a0";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ export default function Contact() {
     }
 
     if (!ACCESS_KEY) {
-      setStatus({ type: "error", message: "La clave de acceso no está configurada. Añade VITE_WEB3FORMS_ACCESS_KEY en tu archivo .env.local." });
+      setStatus({ type: "error", message: "La clave de acceso no está configurada." });
       return;
     }
 
