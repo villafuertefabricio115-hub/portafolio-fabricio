@@ -70,7 +70,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="habilidades" className="relative px-6 py-20">
+    <section id="habilidades" className="relative px-4 py-16 sm:px-6 sm:py-20">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.08]"
@@ -84,16 +84,16 @@ export default function Skills() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl">
-        <div className="mb-10 flex items-center gap-3 font-mono">
+        <div className="mb-8 flex items-center gap-3 font-mono sm:mb-10">
           <span className="text-xl font-bold text-[#fbbf24]">02.</span>
-          <h2 className="text-2xl font-extrabold tracking-tight text-[#e4e4e4] md:text-3xl">
+          <h2 className="text-xl font-extrabold tracking-tight text-[#e4e4e4] sm:text-2xl md:text-3xl">
             STACK_TECNOLOGICO
           </h2>
           <div className="ml-4 h-[1px] flex-1 bg-[#2a2a2a]" />
         </div>
 
         <div className="mb-8 max-w-2xl">
-          <p className="text-base leading-8 text-gray-400">
+          <p className="text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
             Trabajo con un stack enfocado en desarrollo de software, análisis de datos y creación de productos web funcionales e intuitivos.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function Skills() {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="rounded-2xl border border-[#2a2a2a] bg-[#121212] p-6 shadow-[0_0_30px_rgba(0,0,0,0.2)]"
+              className="rounded-2xl border border-[#2a2a2a] bg-[#121212] p-4 shadow-[0_0_30px_rgba(0,0,0,0.2)] sm:p-6"
             >
               <div className="mb-4 flex items-center justify-between border-b border-[#2a2a2a] pb-3">
                 <h3 className="font-mono text-sm font-semibold uppercase tracking-[0.24em] text-[#fbbf24]">
@@ -130,7 +130,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl border border-[#2a2a2a] bg-[#121212] p-6">
+        <div className="mt-10 rounded-2xl border border-[#2a2a2a] bg-[#121212] p-4 sm:p-6">
           <h3 className="mb-4 font-mono text-sm font-semibold uppercase tracking-[0.24em] text-[#fbbf24]">
             Competencias profesionales
           </h3>

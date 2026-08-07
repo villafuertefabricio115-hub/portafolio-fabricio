@@ -7,11 +7,11 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pb-16 pt-24 sm:px-8 lg:px-12"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pb-16 pt-24 sm:px-6 sm:pt-28 lg:px-12"
     >
       <HeroBackground />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
         <div className="flex flex-col justify-center">
           <HeroTerminal />
           <HeroButtons />

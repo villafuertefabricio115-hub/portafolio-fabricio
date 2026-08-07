@@ -70,32 +70,32 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="relative px-6 py-20">
+    <section id="contacto" className="relative px-4 py-16 sm:px-6 sm:py-20">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "linear-gradient(to right, #2a2a2a 1px, transparent 1px), linear-gradient(to bottom, #2a2a2a 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
         <div className="absolute bottom-0 right-0 h-[260px] w-[260px] rounded-full bg-[#fbbf24]/10 blur-[120px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl">
-        <div className="mb-12 flex items-center gap-3 font-mono">
+        <div className="mb-8 flex items-center gap-3 font-mono sm:mb-12">
           <span className="text-xl font-bold text-[#fbbf24]">05.</span>
-          <h2 className="text-2xl font-extrabold tracking-tight text-[#e4e4e4] md:text-3xl">
+          <h2 className="text-xl font-extrabold tracking-tight text-[#e4e4e4] sm:text-2xl md:text-3xl">
             INICIAR_CONEXION
           </h2>
           <div className="ml-4 h-[1px] flex-1 bg-[#2a2a2a]" />
         </div>
 
-        <div className="grid gap-8 rounded-2xl border border-[#2a2a2a] bg-[#121212] p-6 shadow-[0_0_35px_rgba(0,0,0,0.25)] md:grid-cols-[0.95fr_1.05fr] md:p-8">
+        <div className="grid gap-6 rounded-2xl border border-[#2a2a2a] bg-[#121212] p-4 shadow-[0_0_35px_rgba(0,0,0,0.25)] sm:p-6 md:grid-cols-[0.95fr_1.05fr] md:gap-8 md:p-8">
           <div className="space-y-6">
             <div className="inline-flex rounded border border-[#2a2a2a] bg-[#0a0a0a] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.24em] text-[#3b82f6]">
               Status: canal abierto
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-3xl font-semibold text-white sm:text-4xl">
+              <h3 className="text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
                 ¿Tienes una propuesta, un proyecto o una idea que quieras discutir?
               </h3>
-              <p className="text-base leading-8 text-gray-400">
+              <p className="text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
                 Estoy abierto a colaboraciones, oportunidades laborales y conversaciones sobre desarrollo web, productos digitales y soluciones con impacto real.
               </p>
             </div>
@@ -127,7 +127,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="rounded-2xl border border-[#2a2a2a] bg-[#0a0a0a] p-5 sm:p-6">
+          <form onSubmit={handleSubmit} className="rounded-2xl border border-[#2a2a2a] bg-[#0a0a0a] p-4 sm:p-6">
             <div className="mb-4 hidden">
               <label htmlFor="botcheck">Bot check</label>
               <input

@@ -6,16 +6,16 @@ export default function About() {
   ];
 
   return (
-    <section id="sobre-mi" className="relative px-6 py-20">
+    <section id="sobre-mi" className="relative px-4 py-16 sm:px-6 sm:py-20">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.09]" style={{ backgroundImage: "linear-gradient(to right, #2a2a2a 1px, transparent 1px), linear-gradient(to bottom, #2a2a2a 1px, transparent 1px)", backgroundSize: "34px 34px" }} />
         <div className="absolute left-1/2 top-1/3 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#3b82f6]/10 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-5xl relative z-10">
-        <div className="mb-10 flex items-center gap-3 font-mono">
+        <div className="mb-8 flex items-center gap-3 font-mono sm:mb-10">
           <span className="text-xl font-bold text-[#fbbf24]">01.</span>
-          <h2 className="text-2xl font-extrabold tracking-tight text-[#e4e4e4] md:text-3xl">
+          <h2 className="text-xl font-extrabold tracking-tight text-[#e4e4e4] sm:text-2xl md:text-3xl">
             SOBRE_MI
           </h2>
           <div className="ml-4 h-[1px] flex-1 bg-[#2a2a2a]" />
@@ -33,22 +33,22 @@ export default function About() {
             </div>
           </div>
 
-          <div className="grid gap-8 p-6 md:grid-cols-[1.1fr_0.9fr] md:p-8">
-            <div className="space-y-5">
+          <div className="grid gap-6 p-4 sm:p-6 md:grid-cols-[1.1fr_0.9fr] md:gap-8 md:p-8">
+            <div className="space-y-4 sm:space-y-5">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#3b82f6]">
                 Perfil profesional
               </p>
 
-              <h3 className="text-2xl font-semibold text-white sm:text-3xl">
+              <h3 className="text-xl font-semibold text-white sm:text-2xl md:text-3xl">
                 Soy un desarrollador en formación con interés particular en backend, bases de datos y el desarrollo de sistemas con propósito real.
               </h3>
 
-              <p className="text-base leading-8 text-gray-400">
+              <p className="text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
                 Me interesa construir productos que sean funcionales, claros y útiles, especialmente cuando resuelven problemas reales. Mi camino ha estado vinculado al desarrollo de software con enfoque en la lógica del sistema, el manejo de datos y la creación de soluciones que puedan sostenerse en el tiempo. También he explorado áreas como análisis de datos, diseño de procesos y desarrollo de aplicaciones orientadas a la acción.
               </p>
             </div>
 
-            <div className="rounded-xl border border-[#2a2a2a] bg-[#0a0a0a] p-5">
+            <div className="rounded-xl border border-[#2a2a2a] bg-[#0a0a0a] p-4 sm:p-5">
               <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-[#fbbf24]">
                 Enfoque actual
               </p>

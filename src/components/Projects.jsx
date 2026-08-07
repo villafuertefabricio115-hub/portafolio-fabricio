@@ -49,9 +49,9 @@ export default function Projects() {
   ];
 
   return (
-    <section id="proyectos" className="relative px-6 py-20">
+    <section id="proyectos" className="relative px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 flex items-center gap-3 font-mono">
+        <div className="mb-10 flex items-center gap-3 font-mono sm:mb-12">
           <span className="text-xl font-bold text-[#fbbf24]">03.</span>
           <h2 className="text-2xl font-extrabold tracking-tight text-[#e4e4e4] md:text-3xl">
             PROYECTOS
@@ -65,22 +65,22 @@ export default function Projects() {
               key={index}
               className="overflow-hidden rounded-2xl border border-[#2a2a2a] bg-[#121212] shadow-[0_0_35px_rgba(0,0,0,0.25)]"
             >
-              <div className="grid gap-8 p-6 md:grid-cols-[1.05fr_0.95fr] md:p-8">
-                <div className="space-y-5">
-                  <div className="flex flex-wrap items-center gap-3 font-mono">
+              <div className="grid gap-6 p-4 sm:p-6 md:grid-cols-[1.05fr_0.95fr] md:gap-8 md:p-8">
+                <div className="space-y-4 sm:space-y-5">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 font-mono">
                     <span className={`rounded border px-2.5 py-1 text-[10px] font-bold uppercase ${project.statusColor}`}>
                       Status: {project.status}
                     </span>
-                    <span className="text-[11px] uppercase tracking-[0.2em] text-[#3b82f6]">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-[#3b82f6] sm:text-[11px]">
                       {project.subtitle}
                     </span>
                   </div>
 
-                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">
+                  <h3 className="text-xl font-semibold text-white sm:text-2xl sm:text-3xl">
                     {project.title}
                   </h3>
 
-                  <p className="text-base leading-8 text-gray-400">
+                  <p className="text-sm leading-7 text-gray-400 sm:text-base">
                     {project.description}
                   </p>
 
@@ -94,8 +94,8 @@ export default function Projects() {
                   </ul>
                 </div>
 
-                <div className="rounded-2xl border border-[#2a2a2a] bg-[#0a0a0a] p-5">
-                  <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.24em] text-[#fbbf24]">
+                <div className="rounded-2xl border border-[#2a2a2a] bg-[#0a0a0a] p-4 sm:p-5">
+                  <div className="mb-4 font-mono text-[10px] uppercase tracking-[0.24em] text-[#fbbf24] sm:text-[11px]">
                     Stack y enfoque
                   </div>
 
@@ -118,7 +118,7 @@ export default function Projects() {
                         <FaArrowRight className="text-[11px]" />
                       </a>
                     ) : (
-                      <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-gray-500">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-gray-500 sm:text-[11px]">
                         Demo en desarrollo
                       </p>
                     )}
