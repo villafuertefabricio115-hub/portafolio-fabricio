@@ -1,8 +1,8 @@
 export default function About() {
   const points = [
-    "Me interesa más el desarrollo backend, la lógica de negocio y la construcción de sistemas que funcionen de forma robusta y escalable.",
-    "También disfruto trabajar en experiencias de usuario cuando estas están conectadas con una arquitectura sólida y bien pensada.",
-    "Estoy interesado en proyectos donde la tecnología pueda aportar valor real a personas, instituciones o procesos.",
+    "Backend & Lógica de Negocio: Desarrollo de servidores, APIs y controladores en Java (Spring Boot) y Python (Flask).",
+    "Modelado de Datos: Diseño, normalización y gestión de bases de datos relacionales robustas en MySQL y SQLite",
+    "Sistemas de Información: Interés en arquitecturas de software para automatización de procesos, gestión empresarial y logística.",
   ];
 
   return (
@@ -40,11 +40,11 @@ export default function About() {
               </p>
 
               <h3 className="text-xl font-semibold text-white sm:text-2xl md:text-3xl">
-                Soy un desarrollador en formación con interés particular en backend, bases de datos y el desarrollo de sistemas con propósito real.
+                Tecnólogo en Desarrollo de Software enfocado en arquitectura Backend, gestión de datos y soluciones orientadas a procesos reales.
               </h3>
 
               <p className="text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
-                Me interesa construir productos que sean funcionales, claros y útiles, especialmente cuando resuelven problemas reales. Mi camino ha estado vinculado al desarrollo de software con enfoque en la lógica del sistema, el manejo de datos y la creación de soluciones que puedan sostenerse en el tiempo. También he explorado áreas como análisis de datos, diseño de procesos y desarrollo de aplicaciones orientadas a la acción.
+                Graduado del Instituto Superior Tecnológico Juan Bautista Aguirre. Mi trabajo se centra en el diseño de bases de datos relacionales, desarrollo de APIs y lógica de servidor, así como en la estructuración de aplicaciones empresariales e institucionales. Me motiva construir código limpio, escalable y mantenible que optimice procesos e interacciones complejas.
               </p>
             </div>
 

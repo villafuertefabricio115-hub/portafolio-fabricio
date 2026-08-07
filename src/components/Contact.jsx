@@ -96,7 +96,7 @@ export default function Contact() {
                 ¿Tienes una propuesta, un proyecto o una idea que quieras discutir?
               </h3>
               <p className="text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
-                Estoy abierto a colaboraciones, oportunidades laborales y conversaciones sobre desarrollo web, productos digitales y soluciones con impacto real.
+                Estoy abierto a colaboraciones, oportunidades laborales y conversaciones sobre desarrollo web, sistemas de gestión, productos digitales y soluciones con impacto real.
               </p>
             </div>
 
@@ -169,7 +169,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full rounded border border-[#2a2a2a] bg-[#121212] px-4 py-3 text-sm text-white outline-none transition focus:border-[#fbbf24]"
-                    placeholder="tu@email.com"
+                    placeholder="tu correo"
                   />
                 </label>
               </div>
